@@ -1,0 +1,87 @@
+.houses{
+  .tabs{
+    &-nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+      &:hover{
+        cursor: pointer;
+      }
+      &__item{
+        margin-right: 28px;
+        &:last-child{
+          margin-right: 0;
+        }
+        &-img{
+          border-radius: 6px;
+        }
+        &.active{
+          position: relative;
+          border: 2px solid green;
+          border-radius: 8px;
+          &:before{
+            content: 'Our houses';
+            color: #ffffff;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 27px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #21B82F 0%, #257C25 100%), #21B82F;
+            border-radius: 0 0 4px 4px;
+          }
+        }
+      }
+    }
+    &-content{
+      display: none;
+      .owl-carousel{
+        .owl-stage-outer{
+          .owl-stage{
+            .owl-item{
+              &:hover{
+                cursor: grab;
+              }
+              &:active{
+                cursor: grabbing;
+              }
+              img{
+                margin: 0 auto;
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+      &.active{
+        display: block;
+      }
+    }
+  }
+  .owl-theme .owl-dots .owl-dot span{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #21B82F;
+    background: #FFFFFF;
+    position: relative;
+  }
+  .owl-theme .owl-dots .owl-dot.active span{
+    &:before{
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #21B82F;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+    }
+  }
+  button:focus{
+    outline:none;
+  }
+}

@@ -1,0 +1,28 @@
+.conditions{
+  margin: 144px 0 100px 0;
+  background:
+  url("../img/conditions/img4.png") right top no-repeat,
+  url("../img/conditions/img3.png") left bottom  no-repeat ;
+  &-title{
+    font-family: Exo,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 40px;
+  }
+  &-info {
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #131313;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

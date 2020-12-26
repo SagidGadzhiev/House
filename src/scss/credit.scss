@@ -1,0 +1,47 @@
+.credit{
+  background: url("../img/credit/bgCredit.png") center/cover no-repeat;
+  padding: 110px 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-general{
+    max-width: 555px;
+    &__title{
+      font-family: Exo,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 53px;
+      color: #131313;
+      margin-bottom: 20px;
+    }
+    &__info{
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #131313;
+    }
+    &__btn{
+      outline: none;
+      padding: 23px 40px;
+      margin-top: 35px;
+      width: 262px;
+      height: 68px;
+      background: linear-gradient(180deg, #21B82F 0%, #257C25 100%);
+      box-shadow: 0 4px 15px rgba(18, 103, 26, 0.4);
+      border-radius: 32px;
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FBFBFB;
+      border: none;
+    }
+  }
+}

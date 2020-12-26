@@ -1,0 +1,114 @@
+.menu{
+  position: relative;
+  margin: 50px 0 60px;
+  background:
+          linear-gradient(90deg, #21B82F 0%, #257C25 100%) top left 0%/100% 18% no-repeat,
+          url("../img/menu/bg1.png") no-repeat,
+          url("../img/menu/bg2.png") bottom right no-repeat;
+  .tabs{
+    &__nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 47px 0 56px;
+      list-style-type: none;
+      &__link{
+        position: relative;
+        text-decoration: none;
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #FBFBFB;
+        cursor: pointer;
+        &.active{
+          text-decoration-line: underline;
+        }
+      }
+    }
+    &__content{
+      display: none;
+      &.active{
+        display: block;
+      }
+      .flex-container{
+        display: flex;
+        justify-content: space-between;
+      }
+      &__title{
+        font-family: Exo,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 40px;
+      }
+      &__info{
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #131313;
+      }
+      &__address{
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #131313;
+      }
+      &__myCar{
+        max-width: 555px;
+        margin-top: 60px;
+        &__title{
+          display: inline-block;
+          font-family: Roboto,sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 26px;
+          color: #131313;
+          margin-bottom: 25px;
+        }
+        &__info{
+          font-family: Roboto,sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          color: #131313;
+        }
+        &__text{
+          font-weight: bold;
+        }
+      }
+      &__bus{
+        max-width: 457px;
+        margin-top: 60px;
+        &__title{
+          display: inline-block;
+          font-family: Roboto,sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 26px;
+          line-height: 30px;
+          color: #131313;
+          margin-bottom: 25px;
+        }
+        &__info{
+          font-family: Roboto,sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          color: #131313;
+        }
+      }
+    }
+  }
+}

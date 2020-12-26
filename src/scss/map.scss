@@ -1,0 +1,32 @@
+.map{
+  position: relative;
+  margin-bottom: 60px;
+  &-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 30px;
+    &__img{
+      width: 160px;
+      height: 160px;
+    }
+    &__time{
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 40px;
+      text-align: center;
+      color: #000;
+      &-text{
+        color: #21B82F;
+      }
+    }
+  }
+}

@@ -1,0 +1,433 @@
+@media (max-width: 1200px) {
+  .header{
+    .container{
+      display: block;
+    }
+    &-img{
+      display: block;
+      margin: 0 auto 14px;
+      border-radius: 0 0 40px 40px;
+    }
+    &-address{
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+    &-contacts{
+      text-align: center;
+      &__text{
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+  .home{
+    background: url("../img/home/bgHome.png") 60%/cover no-repeat ;
+    padding-top: 340px;
+    .offer{
+      &-title{
+        font-size: 28px;
+        line-height: 50px;
+      }
+      &-info{
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &-callBtn{
+        margin: 55px 0 75px;
+        width: 200px;
+        height: 45px;
+        &__title{
+          font-size: 11px;
+          line-height: 12px;
+        }
+        &__logo{
+          width: 20px;
+          height: 20px;
+          img{
+            vertical-align: inherit;
+          }
+        }
+      }
+    }
+    .messenger{
+      &-WhatsApp{
+        width: 30px;
+        height: 30px;
+        &__img{
+          width: 15px;
+          height: 15px;
+        }
+        &:before{
+          width: 45px;
+          height: 45px;
+        }
+        &:after{
+          width: 57px;
+          height: 57px;
+        }
+      }
+      &-Telegram{
+        width: 30px;
+        height: 30px;
+        &__img{
+          width: 15px;
+          height: 15px;
+        }
+        &:before{
+          width: 45px;
+          height: 45px;
+        }
+        &:after{
+          width: 57px;
+          height: 57px;
+        }
+      }
+    }
+  }
+  .menu{
+    background: linear-gradient(90deg, #21B82F 0%, #257C25 100%)top left 0%/100% 14% no-repeat,
+    url("../img/menu/bg1.png") no-repeat,
+    url("../img/menu/bg2.png") bottom right no-repeat;
+    position: relative;
+    .tabs{
+      &__nav{
+        position: absolute;
+        top: 0;
+        left: -300%;
+        width: 100%;
+        background: linear-gradient(90deg, #21B82F 0%, #257C25 100%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.6s;
+        &.active {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          background: linear-gradient(90deg, #21B82F 0%, #257C25 100%);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 5;
+        }
+        &__link{
+          margin-right: 0;
+          margin-bottom: 25px;
+        }
+      }
+      &__content{
+        padding-top: 130px;
+        &__title{
+          font-size: 35px;
+          margin-bottom: 22px;
+        }
+        &__info{
+          font-size: 16px;
+        }
+        &__address{
+          font-size: 18px;
+          line-height: 22px;
+        }
+        .flex-container{
+          display: block;
+        }
+        &__myCar{
+          max-width: none;
+          img{
+            display: block;
+            margin: 0 auto;
+          }
+          &__title{
+            display: block;
+            text-align: center;
+          }
+        }
+        &__bus{
+          max-width: none;
+          img{
+            display: block;
+            margin: 0 auto;
+          }
+          &__title{
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .burger-menu{
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      &.active{
+        z-index: 6;
+        .burger-menu__line{
+          background: none;
+          &:before{
+            transform: rotate(45deg);
+            top: 0;
+            transition: 0.5s;
+          }
+          &:after{
+            transform: rotate(-45deg);
+            bottom: 0;
+            transition: 0.5s;
+          }
+        }
+      }
+      &__line {
+        width: 30px;
+        height: 2px;
+        background: #000;
+        position: relative;
+        &:before{
+          @include burgerLine();
+          top: -10px;
+        }
+        &:after{
+          @include burgerLine();
+          bottom: -10px;
+        }
+      }
+    }
+  }
+  .map{
+    &-info{
+      width: 400px;
+      height: 150px;
+      &__img{
+        width: 110px;
+        height: 110px;
+      }
+      &__time{
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+  .houses{
+    .tabs{
+      &-nav{
+        &__item{
+          margin: 0 0 10px 0;
+        }
+      }
+      &-content{
+        .owl-carousel{
+          .owl-stage-outer{
+            .owl-stage{
+              .owl-item{
+                img{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .content{
+    .container{
+      padding-right: var(--bs-gutter-x,.75rem);
+      padding-left: var(--bs-gutter-x,.75rem);
+    }
+    .advants{
+      width: 100%;
+      padding: 60px 0;
+      position: relative;
+      &-list{
+        padding: 0;
+        flex-direction: row;
+        justify-content: center;
+        &__item{
+          margin-bottom: 0;
+          &_first{
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &_third{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    .tabs{
+      margin: 62px 0 50px 0;
+      &-nav{
+        &__item{
+          margin-left: 0;
+          margin-bottom: 15px;
+        }
+      }
+      &-content{
+        &__text{
+          text-indent: 50px;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .credit{
+    img{
+      margin: 0 auto 30px;
+      width: 330px;
+    }
+    &-general{
+      max-width: none;
+      &__title{
+        text-align: center;
+      }
+      &__btn{
+        display: block;
+        margin: 35px auto 0;
+      }
+    }
+  }
+  .conditions{
+    background: url("../img/conditions/img4.png") right top 0%/400px 400px  no-repeat,
+    url("../img/conditions/img3.png") left bottom 50%/300px 300px no-repeat;
+    &-title{
+      font-size: 32px;
+    }
+    &-info {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  .advants{
+    background: none;
+    padding: 0;
+    background: rgba(61, 209, 255, 0.06);
+    .container{
+      justify-content: center;
+    }
+    &-block{
+      border-radius: 10px;
+      margin-bottom: 25px !important;
+      &_first{
+        background: url("../img/advants/bg1.png") center/cover no-repeat;
+      }
+      &_second{
+        background: url("../img/advants/bg2.png") center/cover no-repeat;
+      }
+      &_third{
+        background: url("../img/advants/bg3.png") center/cover no-repeat;
+      }
+      &_fourth{
+        background: url("../img/advants/bg4.png") center/cover no-repeat;
+      }
+      &__title{
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+      }
+      &__info{
+        font-size: 13px;
+        line-height: 28px;
+      }
+    }
+  }
+  .applicsForm{
+    background: url("../img/applicsForm/img5.png") left 70%/40% 40% no-repeat, url("../img/applicsForm/img6.png") top left 100%/70% 70% no-repeat;
+    padding-top: 75px;
+    &-content{
+      &__info{
+        font-size: 15px;
+        line-height: 30px;
+      }
+    }
+    &-form{
+      .label{
+        flex-direction: column;
+      }
+      &__input{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .footer{
+    padding: 0;
+    img{
+      margin: auto;
+    }
+    &-phone{
+      margin: auto;
+    }
+    &-icons{
+      flex-direction: column;
+      img{
+        margin-right: 0 !important;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    background: linear-gradient(90deg, #21B82F 0%, #257C25 100%) top left 0%/100% 10% no-repeat,
+    url("../img/menu/bg1.png") no-repeat,
+    url("../img/menu/bg2.png") bottom right no-repeat;
+  }
+  .applicsForm{
+    background: url("../img/applicsForm/img5.png") left 70%/40% 25% no-repeat, url("../img/applicsForm/img6.png") top left 100%/70% 50% no-repeat;
+    &-content{
+      &__link{
+        font-size: 30px;
+      }
+    }
+  }
+    .otherProjs{
+    .projects{
+      &__proj{
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+  .footer{
+    padding: 20px 0;
+    img{
+      margin-bottom: 20px;
+    }
+    .container{
+      flex-direction: column;
+    }
+    &-icons{
+      flex-direction: row;
+      margin: 20px auto 0;
+    }
+  }
+  .map{
+    &-info{
+      display: none;
+    }
+  }
+  .upBtn{
+    width: 30px;
+    height: 30px;
+    bottom: 5px;
+    right: 5px;
+    line-height: 29px;
+  }
+  .downBtn{
+    bottom: 5px;
+    right: 5px;
+    line-height: 28px;
+    font-size: 11px;
+    width: 45px;
+    height: 30px;
+  }
+}

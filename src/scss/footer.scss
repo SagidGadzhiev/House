@@ -1,0 +1,50 @@
+.footer{
+  background: linear-gradient(90deg, rgba(33, 184, 47, 0.8) 0%, rgba(37, 124, 37, 0.8) 100%);
+  padding: 58px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-phone{
+    text-align: center;
+    &__tel{
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 34px;
+      color: #FBFBFB;
+      text-decoration: none;
+      &:hover{
+        color: #1a53ff;
+      }
+    }
+    &__text{
+      font-family: Roboto,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      color: #FBFBFB;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+  }
+  .footer-icons{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    &__img{
+      width: 40px;
+      height: 40px;
+      margin-right: 35px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

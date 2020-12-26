@@ -1,0 +1,17 @@
+.conditions-title {
+  font-family: Exo, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #131313;
+}
+.conditions-info {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+  color: #131313;
+}

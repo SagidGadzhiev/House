@@ -1,0 +1,11 @@
+.map {
+  position: relative;
+}
+.map-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 650px;
+  height: 350px;
+  background: #ffffff;
+}

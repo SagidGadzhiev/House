@@ -1,0 +1,68 @@
+@import "../fonts/roboto/stylesheet.css";
+@import "../fonts/exo/stylesheet.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+//Mixins
+
+@mixin text() {
+  font-family: Roboto,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+@mixin proj() {
+  position: absolute;
+  z-index: 5;
+  margin-bottom: 0;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+@mixin burgerLine() {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #000;
+}
+
+@mixin trigger($url) {
+  background: $url;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@import "header";
+@import "home";
+@import "menu";
+@import "map";
+@import "houses";
+@import "content";
+@import "credit";
+@import "conditions";
+@import "advants";
+@import "applicsForm";
+@import "otherProjs";
+@import "footer";
+@import "media";
